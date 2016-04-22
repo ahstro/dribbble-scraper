@@ -1,36 +1,22 @@
 # dribbble-scraper
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+I wanted to learn some Clojure, so this is a proof-of-concept Dribbble scraper.
 
 ## Usage
 
-FIXME: explanation
+This isn't meant to be used practically, so for now, the only way to use it
+(that I know of) is to fire up a REPL and use the following functions:
 
-    $ java -jar dribbble-scraper-0.1.0-standalone.jar [args]
+```clojure
+(scrape)            ; Starts at `dribbble.com/designers?page=1` and
+                    ; scrapes each page until nothing is found
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+(scrape-page page)  ; Scrapes page `dribbble.com/designers?page={page}`
+```
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 Anton Strömkvist
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
